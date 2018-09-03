@@ -1,0 +1,49 @@
+{
+  "name": "exchange-owl",
+  "version": "1.0.0",
+  "description": "exchange-owl",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/example.js --exec babel-node",
+    "build": "rm -rf ./build/ && babel src --out-dir build/ --copy-files",
+    "prod": "NODE_ENV=production node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeftarmascarenhas/exchange-owl.git"
+  },
+  "keywords": [
+    "exchage",
+    "stock"
+  ],
+  "author": "jeftar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeftarmascarenhas/exchange-owl/issues"
+  },
+  "homepage": "https://github.com/jeftarmascarenhas/exchange-owl#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "http-status": "^1.2.0",
+    "morgan": "^1.9.0",
+    "nightmare": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.4"
+  }
+}
